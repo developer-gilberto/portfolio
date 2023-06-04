@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,133 +10,278 @@
     scroll-behavior: smooth;
 }
 :root{
-    --c1:#014863;
-    --c2:#01425C;
-    --c3:#013466;
-    --c4:#051A4F;
-    --c5:#04133B;
-    --c6:#01E50E;
-    --c7:#52FC0D;
-    --c8:#9EF20C;
-    --color0: #d3d3d3;
-    --color1: #808080;
-    --color2: #0AFFEB;
-    --color3: #09BEE8;
-    --color4: #1696FF;
+    --b1: #000000;
+    --b2: #0f0f0f;
+    --b3: #1e1e1e;
+    --b4: #2d2d2d;
+    --b5: #3c3c3c;
+    --b6: #d3d3d3;
+    --b7: #778899;
+    --b8: #808080;
 
+    --r1: #fa1e0c;
+    --r2: #ca1f0f;
+    --r3: #9e150a;
+    --r4: #730a05;
+    --r5: #470000;
+
+    --b01: #0AFFEB;
+    --b02: #09BEE8;
+    --b04: #1696FF;
+    --b05: #014863;
+    --b06: #01425C;
+    --b07: #013466;
+    --b08: #051A4F;
+    --b09: #04133B;
+    --b10: #091B2A;
 }
 html, body{
-    /* background-image: linear-gradient(to top, var(--color0), var(--color1), transparent); */
     overflow-x: hidden;
     height: 100vh;
     width: 100vw;
 }
+::-webkit-scrollbar{
+    width: 0.3125rem;
+    background-color: var(--b05);
+}
+::-webkit-scrollbar-thumb{
+    width: 0.3125rem;
+    background-color: var(--b01);
+    border-radius: 0.625rem;
+}
 header{
+    background-color: var(--b09);
+    border-bottom: 1px solid var(--b01);
+    padding: 0.625rem 1.25rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
-nav ul li a{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 1px #0AFFEB;
-}
-nav ul li a:hover{
-    color: #013466;
-}
-main{
-    min-height: 100%;
-}
-#home{
-    width: 100%;
-    height: 700px;
-    background-image: url(../img/foto-gil-full.jpg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
-    background-attachment: fixed;
-    /* opacity: 90%; 
-    backdrop-filter: opacity(100%);*/
-}
-.img-e-descricao{
+header .logo-animado{
+    /* border: 1px solid var(--b01);
+    border-radius: 0.625rem; 
+    background-color: var(--b3);*/
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
-.bg-html h2{
-    color: white;
-    text-align: center;
-    font-size: 2em;
+/* header .logo-animado:hover{
+    color: var(--b01);
+} */
+header h1 .developer{
+    color: var(--b8);
+    font-weight: 500;
+    font-style: italic;
 }
-.bg-html{
+header h1 .gilberto{
+    color: var(--b01);
+    font-weight: bold;
+    font-style: italic;
+}
+.maior-menor{
+    -webkit-text-stroke: 1px var(--b01);
+    color: transparent;
+    font-size: 50px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header nav ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3125rem 0.625rem;
+}
+header nav ul li a{
+    color: var(--b6);
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li a:hover{
+    color: var(--b01);
+    transition: 0.3s;
+}
+header nav ul li a i{
+    color: var(--b05);
+    margin: 0.3125rem;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* header nav ul li a i:hover{
+    color: var(--r1);
+} */
+ main{
+    background-color: var(--b08);
     width: 100%;
+    /* padding: 3.125rem; */
+}
+ #home{/*background-color: #09BEE8; */
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 3.125rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sobre-mim{
+    max-width: 50%;
+    padding: 1.25rem;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between; */
+}
+.sobre-mim h2{
+    color: var(--b6);
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.3;
+    text-shadow: 1px 1px 0px black;
+}
+.GL{
+    /* font-style: italic; */
+    font-weight: bold;
+}
+.sobre-mim .web-developer{
+    /* -webkit-text-stroke: 1px var(--b1); */
+    text-shadow: 1px 1px 0px black;
+    color: var(--b04);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.sobre-mim p{
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    text-align: justify;
+}
+.redes-sociais{
+    /* text-align: center; */
+}
+.redes-sociais .bx{
+    color: var(--b04);
+    font-size: 2.5rem;
+    margin: 1.25rem;
+}
+.redes-sociais .bx:hover{
+    color: var(--b01);
+}
+.home-img{
+    padding: 0.625rem;
+    margin-bottom: 3.125rem;
+    max-width: 50%;
+    margin-left: 1.25rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--b01);
+    border-radius: 50%;
+    background-image: linear-gradient(to top, black, var(--b08), transparent);
+}
+.bg-skills{
     height: 400px;
-    background-image: url(../img/html-fundo.jpg);
+    width: 100%;
+    background-image: url(../img/fundo-js-css-html.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.html{
-}
-.bg-css{
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/css-fundo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.bg-js{
-    width: 100%;
-    height: 400px;
-    background-image: url(../img/js-fundo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.bg-projetos h2{
-    color: white;
+/* .div-skills{
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+.bg-skills h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 4em;
+    color: var(--b01);
+    -webkit-text-stroke: 1px var(--b09);
+    text-shadow: 1px 1px 0px black;
+}
+/* .bg-html img{
+    box-shadow: 0px 0px 10px black;
+    border-radius: 50%;
+    padding: 0.625rem;
+    background-image: linear-gradient(to top, var(--b01), var(--b02), transparent);
+} */
+.section-skills{
+    /* background-color: #014863; */
+    padding: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-skills{
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-skills p{
+    text-indent: 1.875rem;
+    text-align: justify;
+    color: var(--b6);
+    text-shadow: 1px 1px 0px black;
+}
+.div-skills img{
+    border: 1px solid var(--b01);
+    border-radius: 50%;
+    padding: 0.625rem;
+    background-image: linear-gradient(to bottom, var(--b05), var(--b09));
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 1.875rem;
 }
 .bg-projetos{
-    width: 100%;
     height: 400px;
+    width: 100%;
     background-image: url(../img/lampada-projetos.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     background-size: cover;
     background-attachment: fixed;
-}
-form{
-    background-color: #09BEE8;
-}
-ul{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
-li{
-    margin-left: 40px;
-}
-.bx{
-    visibility: hidden;
-}
-/* .bx:hover{
-    visibility: visible;
-} */
-
-footer{
-    background-color: #013466;
+.bg-projetos h2{
     text-align: center;
-    color: white;
-}
-
-@media screen and (max-width: 600px){
-    .bx{
-        visibility: visible;
-    }
+    font-size: 4em;
+    color: var(--b01);
+    -webkit-text-stroke: 1px var(--b09);
+    text-shadow: 1px 1px 0px black;
 }
