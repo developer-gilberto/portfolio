@@ -1,0 +1,141 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', 'Courier New', Courier, monospace, sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --c1:#014863;
+    --c2:#01425C;
+    --c3:#013466;
+    --c4:#051A4F;
+    --c5:#04133B;
+    --c6:#01E50E;
+    --c7:#52FC0D;
+    --c8:#9EF20C;
+    --color0: #d3d3d3;
+    --color1: #808080;
+    --color2: #0AFFEB;
+    --color3: #09BEE8;
+    --color4: #1696FF;
+
+}
+html, body{
+    /* background-image: linear-gradient(to top, var(--color0), var(--color1), transparent); */
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #0AFFEB;
+}
+nav ul li a:hover{
+    color: #013466;
+}
+main{
+    min-height: 100%;
+}
+#home{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/foto-gil-full.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* opacity: 90%; 
+    backdrop-filter: opacity(100%);*/
+}
+.img-e-descricao{
+    display: flex;
+}
+.bg-html h2{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.bg-html{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/html-fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.html{
+}
+.bg-css{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/css-fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-js{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/js-fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-projetos h2{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.bg-projetos{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/lampada-projetos.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form{
+    background-color: #09BEE8;
+}
+ul{
+    display: flex;
+
+}
+li{
+    margin-left: 40px;
+}
+.bx{
+    visibility: hidden;
+}
+/* .bx:hover{
+    visibility: visible;
+} */
+
+footer{
+    background-color: #013466;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    .bx{
+        visibility: visible;
+    }
+}
