@@ -19,10 +19,10 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="#"><i class='bx bx-user'></i>Sobre mim</a></li>
-                <li><a href="#"><i class='bx bx-code'></i>Skills</a></li>
-                <li><a href="#"><i class='bx bx-wrench'></i>Projetos</a></li>
-                <li><a href="#"><i class='bx bx-envelope'></i>Contato</a></li>
+                 <li><a href="#home"><!--<i class='bx bx-user'></i>-->Home</a></li> 
+                <li><a href="#skills"><!--<i class='bx bx-code'></i>-->Skills</a></li>
+                <li><a href="#projetos"><!--<i class='bx bx-wrench'></i>-->Projetos</a></li>
+                <li><a href="#contato"><!--<i class='bx bx-envelope'></i>-->Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -46,32 +46,40 @@
             </div>
         </section>
 
-        <section class="bg-skills">
-            <h2>Skills</h2>
+        <section id="skills" class="bg-skills">
+            <h2>My skills</h2>
         </section>
 
         <section class="section-skills">
             <div class="div-skills">
                 <img src="./img/trio-removebg-html.png" alt="HTML">
+                <div class="skill-html"><p>My skill HTML</p><span>70%</span></div>
                 <p>Criada pelo britânico Tim Berners-Lee, o acrônimo HTML significa HiperText Markup Language, traduzindo ao português: Linguagem de Marcação de Hipertexto. O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos. Portanto, podemos considerar o HTML o “esqueleto” da sua página.</p>
             </div>
             <div class="div-skills">
                 <img src="./img/trio-removebg-css.png" alt="HTML">
+                <div class="skill-css"><p>My skill CSS</p><span>60%</span></div>
                 <p>CSS é uma linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página. CSS é a abreviação para Cascading Style Sheet traduzindo, folha de estilos em cascata. Resumindo o CSS é a parte visual do site. Pense na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante.</p>
             </div>
             <div class="div-skills">
                 <img src="./img/trio-removebg-javascript.png" alt="HTML">
+                <div class="skill-js"><p>My skill JavaScript (Em breve...)</p><span>0%</span></div>
                 <p>Javascript ou JS é uma linguagem de programação de comportamento que permite a criação de conteúdos dinâmicos, controle de mídias e animações para deixar seu site mais interativo e interessante. A linguagem de programação Javascript permite ao desenvolvedor implementar diversos itens de alto nível de complexidade em páginas web, como animações, mapas, gráficos ou informações que se atualizam em intervalos de tempo padrão, por exemplo. Javascript é a terceira camada do bolo de desenvolvimento web e front-end, junto com HTML e CSS.</p>
             </div>
         </section>
 
-        <section class="bg-projetos">
+        <section id="projetos" class="bg-projetos">
             <h2>Projetos</h2>
         </section>
 
         <section class="android">
-            <h3>Mascote do Android</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam deleniti accusantium nihil voluptatem laboriosam dolorem obcaecati. Sapiente debitis cum excepturi placeat quas. Hic iste ea, est amet perspiciatis deleniti!</p>
+            <div class="div-projetos">
+                <h3>Mascote do Android</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam deleniti accusantium nihil voluptatem laboriosam dolorem obcaecati. Sapiente debitis cum excepturi placeat quas. Hic iste ea, est amet perspiciatis deleniti!</p>
+            </div>
+            <div class="div-iphone">
+                <iframe src="https://developer-gilberto.github.io/project-android/" scrolling="auto" frameborder="0"></iframe>
+            </div>
         </section>
 
         <section class="Cordel Moderno">
@@ -84,17 +92,34 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam deleniti accusantium nihil voluptatem laboriosam dolorem obcaecati. Sapiente debitis cum excepturi placeat quas. Hic iste ea, est amet perspiciatis deleniti!</p>
         </section>
 
-        <section>
+        <section id="contato" class="section-contato">
+
             <form action="cadastro.php" method="post">
-                <input type="text" name="nome" id="inome">
-                <input type="email" name="email" id="iemail">
+
+                <h2>Contato profissional</h2>
+
+                <div class="div-campo">
+                    <label for="inome"><i class='bx bxs-user'></i></label>
+                    <input type="text" name="nome" id="inome">
+                </div>
+
+                <div class="div-campo">
+                    <label for="iemail"><i class='bx bxs-envelope'></i></label>
+                    <input type="email" name="email" id="iemail">
+                </div>
+
+                <label for="imensagem"><i class='bx bx-message-detail'></i></label>
+
                 <textarea name="mensagem" id="imensagem" cols="30" rows="5"></textarea>
+
             </form>
+
         </section>
 
     </main>
 
     <footer>
+        <a href="#home"><i class='bx bxs-up-arrow-circle'></i></a>
         <p>Site criado e desenvolvido por Gilberto Lopes</p>
     </footer>
 

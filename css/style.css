@@ -51,7 +51,7 @@ html, body{
 }
 header{
     background-color: var(--b09);
-    border-bottom: 1px solid var(--b01);
+    border-bottom: 1px solid var(--b8);
     padding: 0.625rem 1.25rem;
     display: flex;
     flex-direction: row;
@@ -103,8 +103,9 @@ header nav ul li{
     margin: 0.3125rem 0.625rem;
 }
 header nav ul li a{
+    margin-left: 1.25rem;
     color: var(--b6);
-    font-weight: 500;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -154,13 +155,14 @@ header nav ul li a i{
 }
 .sobre-mim h2{
     color: var(--b6);
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.3;
     text-shadow: 1px 1px 0px black;
 }
 .GL{
     /* font-style: italic; */
+    font-size: 4rem;
     font-weight: bold;
 }
 .sobre-mim .web-developer{
@@ -179,12 +181,12 @@ header nav ul li a i{
     /* text-align: center; */
 }
 .redes-sociais .bx{
-    color: var(--b04);
+    color: var(--b01);
     font-size: 2.5rem;
     margin: 1.25rem;
 }
 .redes-sociais .bx:hover{
-    color: var(--b01);
+    text-shadow: 0px 0px 3px var(--b01);
 }
 .home-img{
     padding: 0.625rem;
@@ -200,11 +202,12 @@ header nav ul li a i{
     height: 100%;
     border: 1px solid var(--b01);
     border-radius: 50%;
-    background-image: linear-gradient(to top, black, var(--b08), transparent);
+    background-image: linear-gradient(to top, black, var(--b09), var(--b07));
 }
 .bg-skills{
     height: 400px;
     width: 100%;
+    box-shadow: inset 0px 0px 20px var(--b1);
     background-image: url(../img/fundo-js-css-html.png);
     background-repeat: no-repeat;
     background-position: right center;
@@ -236,7 +239,7 @@ header nav ul li a i{
     background-image: linear-gradient(to top, var(--b01), var(--b02), transparent);
 } */
 .section-skills{
-    /* background-color: #014863; */
+    background-color: var(--b09);
     padding: 1.875rem;
     display: flex;
     flex-direction: row;
@@ -245,6 +248,10 @@ header nav ul li a i{
     align-items: center;
 }
 .div-skills{
+    box-shadow: 0px 0px 5px black;
+    background-image: linear-gradient(to bottom, var(--b07), var(--b09));
+    border: 1px solid var(--b01);
+    padding: 1.875rem;
     margin: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -263,8 +270,65 @@ header nav ul li a i{
     border-radius: 50%;
     padding: 0.625rem;
     background-image: linear-gradient(to bottom, var(--b05), var(--b09));
-    box-shadow: 0px 0px 10px black;
+    /* box-shadow: 0px 0px 7px black; */
     margin-bottom: 1.875rem;
+}
+.skill-html{
+    min-width: 100%;
+    padding: 0.3125rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--b01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-html p{
+    background-color: var(--b01);
+    width: 70%;
+    color: var(--b09);
+    font-weight: bold;
+    text-shadow: none;
+}
+.skill-html span{
+    color: var(--b01);
+}
+.skill-css{
+    min-width: 100%;
+    padding: 0.3125rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--b01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-css p{
+    background-color: var(--b01);
+    width: 60%;
+    color: var(--b09);
+    font-weight: bold;
+    text-shadow: none;
+}
+.skill-css span{
+    color: var(--b01);
+}
+.skill-js{
+    min-width: 100%;
+    padding: 0.3125rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--b01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-js p{
+    background-color: transparent;
+    width: 100%;
+    color: var(--b01);
+    font-weight: normal;
+    text-shadow: none;
+}
+.skill-js span{
+    color: var(--b01);
 }
 .bg-projetos{
     height: 400px;
@@ -284,4 +348,93 @@ header nav ul li a i{
     color: var(--b01);
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 1px 1px 0px black;
+}
+.android{
+    width: 100%;
+    padding: 3.125rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-projetos{
+    width: 50%;
+    margin: 3.125rem;
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-projetos h3{
+    font-size: 1.5em;
+    color: var(--b8);
+    text-shadow: 1px 1px 0px black;
+}
+.div-projetos p{
+    text-align: justify;
+    font-size: 1em;
+    color: var(--b6);
+    text-shadow: 1px 1px 0px black;
+}
+.div-iphone{
+    background-image: url(../img/frame-iphone.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 311px;
+    height: 627px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+iframe{
+    border: 2px solid black;
+    width: 270px;
+    height: 475px; 
+}
+
+.section-contato{
+    height: 100vh;
+    width: 100%;
+
+    /* padding: 0 500px; */
+
+    background-color: var(--b09);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-contato form{
+    width: 500px;
+    padding: 2.5rem;
+    margin: 0 auto;
+    border: 1px solid var(--b01);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly;
+    align-items: center; */
+}
+.section-contato form h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--b6);
+    text-shadow: 1px 1px 0px black;
+    margin-bottom: 2.5rem;
+}
+.section-contato form input{
+    margin-bottom: 2.5rem;
+}
+.div-campo{
+    margin-bottom: 2.5rem;
+    width: 100%;
 }
