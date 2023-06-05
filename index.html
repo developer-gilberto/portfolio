@@ -11,15 +11,16 @@
 </head>
 <body>
     <header>
-        <h1 class="logo-animado">
-            <span class="maior-menor">&lt;</span>
-            <span class="developer">Developer</span>
-            <span class="gilberto">Gilberto</span>
-            <span class="maior-menor">&gt;</span>
-        </h1>
+            <a href="#topo">
+                <p class="logo-animado">
+                    <span class="maior-menor">&lt;</span>
+                    <span class="developer">Developer</span>
+                    <span class="gilberto">Gilberto</span>
+                    <span class="maior-menor">&gt;</span><span class="registrada">&reg;</span>
+                </p>
+            </a>
         <nav>
-            <ul>
-                 <li><a href="#home"><!--<i class='bx bx-user'></i>-->Home</a></li> 
+            <ul> 
                 <li><a href="#skills"><!--<i class='bx bx-code'></i>-->Skills</a></li>
                 <li><a href="#projetos"><!--<i class='bx bx-wrench'></i>-->Projetos</a></li>
                 <li><a href="#contato"><!--<i class='bx bx-envelope'></i>-->Contato</a></li>
@@ -27,15 +28,14 @@
         </nav>
     </header>
 
-    <main>
+    <main id="topo">
 
         <section id="home">
             <div class="sobre-mim">
                 <h2>Olá, eu sou<br><span class="GL">Gilberto Lopes!</span></h2>
                 <h3 class="web-developer">Studying to be a developer.</h3>
                 <p>Estou feliz que você tenha reservado um tempinho para visitar meu site. Seja muito bem vindo. Fique a vontade e sinta-se em casa. Espero que goste!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero unde non suscipit. Error in perspiciatis ipsum vitae reiciendis, quis consectetur soluta modi saepe dolorum ipsam a incidunt impedit sed nemo!
-                Provident ex commodi soluta distinctio, non voluptatum quam tempora libero, quisquam praesentium accusantium reiciendis veritatis itaque. Eveniet porro pariatur perspiciatis officiis tenetur suscipit repellat error, assumenda a accusantium temporibus quibusdam.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero unde non suscipit. Error in perspiciatis ipsum vitae reiciendis, quis consectetur soluta modi saepe dolorum ipsam a incidunt impedit sed nemo!</p>
                 <div class="redes-sociais">
                     <a href="#"><i class='bx bxl-github'></i></a>
                     <a href="#"><i class='bx bxl-instagram' ></i></a>
@@ -72,45 +72,62 @@
             <h2>Projetos</h2>
         </section>
 
-        <section class="android">
+        <section class="explicacao-projetos">
+            <p>Aqui você encontra alguns dos projetos que fiz. Você pode navegar por cada projeto sem necessariamente abri-lo. Basta rolar a tela dos smartphones abaixo ou, clique no título do projeto para abri-lo em uma nova aba.</p>
+        </section>
+
+        <section class="projetos">
             <div class="div-projetos">
-                <h3>Mascote do Android</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam deleniti accusantium nihil voluptatem laboriosam dolorem obcaecati. Sapiente debitis cum excepturi placeat quas. Hic iste ea, est amet perspiciatis deleniti!</p>
+                <div class="descricao-projetos">
+                    <a href="https://developer-gilberto.github.io/project-android/" target="_blank">Mascote do Android</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="div-iphone">
+                    <iframe src="https://developer-gilberto.github.io/project-android/" scrolling="auto" frameborder="0"></iframe>
+                </div>
             </div>
-            <div class="div-iphone">
-                <iframe src="https://developer-gilberto.github.io/project-android/" scrolling="auto" frameborder="0"></iframe>
+            <div class="div-projetos">
+                <div class="descricao-projetos">
+                    <a href="https://developer-gilberto.github.io/projeto-cordel/" target="_blank">Cordel Moderno</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="div-iphone">
+                    <iframe src="https://developer-gilberto.github.io/projeto-cordel/" scrolling="auto" frameborder="0"></iframe>
+                </div>
             </div>
         </section>
 
-        <section class="Cordel Moderno">
-            <h3>Mascote do Android</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam deleniti accusantium nihil voluptatem laboriosam dolorem obcaecati. Sapiente debitis cum excepturi placeat quas. Hic iste ea, est amet perspiciatis deleniti!</p>
+        <section id="contato" class="bg-contato">
+            <h2>Contato</h2>
         </section>
 
-        <section class="portfolio">
-            <h3>Mascote do Android</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nemo nostrum quae reiciendis fuga voluptates similique iure, dolores maxime laborum, dolorem alias facere unde! Voluptatum reiciendis eos a iure nam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quisquam deleniti accusantium nihil voluptatem laboriosam dolorem obcaecati. Sapiente debitis cum excepturi placeat quas. Hic iste ea, est amet perspiciatis deleniti!</p>
-        </section>
+        <section class="section-contato">
 
-        <section id="contato" class="section-contato">
-
-            <form action="cadastro.php" method="post">
+            <form action="https://formsubmit.co/developer.gilberto@gmail.com" method="post" autocomplete="on">
 
                 <h2>Contato profissional</h2>
 
                 <div class="div-campo">
                     <label for="inome"><i class='bx bxs-user'></i></label>
-                    <input type="text" name="nome" id="inome">
+                    <input type="text" name="nome" id="inome" placeholder="Digite nome completo" required>
                 </div>
 
                 <div class="div-campo">
                     <label for="iemail"><i class='bx bxs-envelope'></i></label>
-                    <input type="email" name="email" id="iemail">
+                    <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required>
                 </div>
 
-                <label for="imensagem"><i class='bx bx-message-detail'></i></label>
+                <div class="div-textarea">
+                    <label for="imensagem"><i class='bx bx-message-detail'></i></label>
+                    <textarea name="mensagem" id="imensagem" cols="30" rows="5" placeholder="Mensagem..." required></textarea>
+                </div>
 
-                <textarea name="mensagem" id="imensagem" cols="30" rows="5"></textarea>
+                <input type="hidden" name="_next" value="https://developer-gilberto.github.io/portfolio/obrigado.html">
+
+                <div class="div-btn-form">
+                    <input class="btn-form" type="submit" value="Enviar">
+                    <input class="btn-form" type="reset" value="Limpar">
+                </div>
 
             </form>
 
@@ -119,8 +136,17 @@
     </main>
 
     <footer>
-        <a href="#home"><i class='bx bxs-up-arrow-circle'></i></a>
-        <p>Site criado e desenvolvido por Gilberto Lopes</p>
+        <p id="logo-footer">
+            <span class="maior-menor">&lt;</span>
+            <span class="developer">Developer</span>
+            <span class="gilberto">Gilberto</span>
+            <span class="maior-menor">&gt;</span>&reg;
+        </p>
+
+        <p>&copy; Copy Right</p>
+        <p>All rights reserved 2023</p>
+        <p>Site criado e desenvolvido por <strong>Gilberto Lopes.</strong></p>
+   
     </footer>
 
 </body>
