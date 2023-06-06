@@ -38,6 +38,10 @@
     }
     header nav ul li a{
         margin-left: 0px;
+        font-size: 1em;
+    }
+    header nav ul li a .bx{
+        font-size: 1.2rem;
     }
     #home{
         flex-direction: column;

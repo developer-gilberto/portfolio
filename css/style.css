@@ -105,19 +105,20 @@ header nav ul{
 }
 header nav ul li{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
     margin: 0.3125rem 0.625rem;
 }
 header nav ul li a{
     margin-left: 1.25rem;
-    color: var(--b6);
+    color: var(--b8);
+    font-size: 1.25rem;
     font-weight: bold;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
 }
@@ -125,13 +126,13 @@ header nav ul li a:hover{
     color: var(--b01);
     transition: 0.3s;
 }
-header nav ul li a i{
-    color: var(--b05);
+header nav ul li a .bx{
+    color: var(--b01);
     margin: 0.3125rem;
-    font-size: 25px;
-    display: flex;
+    font-size: 1.5625rem;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
 }
