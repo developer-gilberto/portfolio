@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', 'Courier New', Courier, monospace, sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --b1: #000000;
+    --b2: #0f0f0f;
+    --b3: #1e1e1e;
+    --b4: #2d2d2d;
+    --b5: #3c3c3c;
+    --b6: #d3d3d3;
+    --b7: #778899;
+    --b8: #808080;
+    --b01: #0AFFEB;
+    --b02: #09BEE8;
+    --b04: #1696FF;
+    --b05: #014863;
+    --b06: #01425C;
+    --b07: #013466;
+    --b08: #051A4F;
+    --b09: #04133B;
+    --b10: #091B2A;
+}
+@media screen and (max-width: 800px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-animado{
+        font-size: 1.4em;
+    }
+    header nav ul li a{
+        margin-left: 0px;
+    }
+    #home{
+        flex-direction: column;
+    }
+    .sobre-mim{
+        max-width: 100%;
+        padding: 1.25rem;
+    }
+    .sobre-mim h2{
+        font-size: 1.5rem;
+    }
+    .GL{
+        font-size: 2rem;
+    }
+    .sobre-mim .web-developer{
+        font-size: 1.5rem;
+    }
+    .redes-sociais{
+        text-align: center;
+    }
+    .redes-sociais .bx{
+        font-size: 2rem;
+    }
+    .home-img{
+        max-width: 70%;
+    }
+    .home-img img{
+        width: 95%;
+    }
+    .bg-skills{
+        background-position: center center;
+    }
+    .bg-skills h2{
+        font-size: 2em;
+    }
+    .div-skills{
+        width: 100%;
+        margin: 0.625rem auto;
+    }
+    .skill-html p{
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+    .skill-html span{
+        font-size: 0.9em;
+    }
+    .skill-css p{
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+    .skill-css span{
+        color: var(--b01);
+        font-size: 0.9em;
+    }
+    .skill-js p{
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+    .skill-js span{
+        font-size: 0.9em;
+    }
+    .bg-projetos{
+        background-position: center center;
+    }
+    .bg-projetos h2{
+        font-size: 2em;
+    }
+    
+    .div-projetos{
+        padding: 1.875rem 0;
+        margin: 1.25rem auto;
+    }
+    .descricao-projetos{
+        width: 100%;
+        padding: 1.25rem;
+    }
+    .descricao-projetos a{
+        font-size: 1.3em;
+    }
+    .div-iphone{
+        background-size: contain;
+    }
+    iframe{
+        width: 87%;
+        height: 73%;
+    }
+    .bg-contato h2{
+        font-size: 2em;
+    }
+    .section-contato{
+        padding: 2.5rem 1.125rem;
+    }
+    .section-contato form{
+        padding: 2.5rem 0.3125rem;
+    }
+
+}
+@media screen and (max-width: 350px) {
+    iframe{
+         /* width: 87%; */
+         height: 67%;
+     }
+
+}

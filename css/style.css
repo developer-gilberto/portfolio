@@ -135,49 +135,39 @@ header nav ul li a i{
     justify-content: center;
     align-items: center;
 }
-/* header nav ul li a i:hover{
-    color: var(--r1);
-} */
- main{
+main{
     background-color: var(--b08);
     width: 100%;
     /* margin-top: 96px; */
-    padding-top: 96px;
+    padding-top: 9rem;
     /* padding: 3.125rem; */
 }
- #home{/*background-color: #09BEE8; */
-    height: 100vh;
+ #home{
+    /* height: 100vh; */
     width: 100%;
     padding-bottom: 3.125rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .sobre-mim{
     max-width: 50%;
     padding: 1.25rem;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between; */
 }
 .sobre-mim h2{
     color: var(--b6);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 1.3;
     text-shadow: 1px 1px 0px black;
 }
 .GL{
-    /* font-style: italic; */
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 .sobre-mim .web-developer{
-    /* -webkit-text-stroke: 1px var(--b1); */
     text-shadow: 1px 1px 0px black;
     color: var(--b04);
     font-size: 2rem;
@@ -227,7 +217,7 @@ header nav ul li a i{
 }
 .bg-skills h2{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     color: var(--b01);
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 2px 2px 0px black;
@@ -236,12 +226,14 @@ header nav ul li a i{
     background-color: var(--b09);
     padding: 1.875rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .div-skills{
+    max-width: 56.25rem;
+
     box-shadow: 0px 0px 5px black;
     background-image: linear-gradient(to bottom, var(--b07), var(--b09));
     border: 1px solid var(--b01);
@@ -254,12 +246,15 @@ header nav ul li a i{
     align-items: center;
 }
 .div-skills p{
-    text-indent: 1.875rem;
+    font-size: 1em;
     text-align: justify;
     color: var(--b6);
     text-shadow: 1px 1px 0px black;
 }
 .div-skills img{
+
+    max-width: 9.375rem;
+
     border: 1px solid var(--b01);
     border-radius: 50%;
     padding: 0.625rem;
@@ -276,6 +271,7 @@ header nav ul li a i{
     align-items: center;
 }
 .skill-html p{
+
     background-color: var(--b01);
     width: 70%;
     color: var(--b09);
@@ -338,50 +334,51 @@ header nav ul li a i{
 }
 .bg-projetos h2{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     color: var(--b01);
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 2px 2px 0px black;
 }
 .explicacao-projetos{
-    margin: 0 3.25rem;
-    margin-top: 3.125rem;
-    padding: 3.125rem;
-
+    margin: 0 auto;
+    padding:  3.125rem 1.25rem;
+    max-width: 56.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .explicacao-projetos p{
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--b6);
     text-shadow: 1px 1px 0px black;
 }
 .projetos{
-    width: 100%;
-    padding: 3.125rem;
+    margin: 0 auto;
+    max-width: 62.5rem;
+    padding:  0rem 1.25rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .div-projetos{
+    max-width: 100%;
+
     box-shadow: 0px 0px 5px black;
     background-image: linear-gradient(to bottom, var(--b07), var(--b09));
     border: 1px solid var(--b01);
     padding: 1.875rem;
     margin: 1.25rem;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 .descricao-projetos{
     width: 50%;
-    margin: 3.125rem;
     padding: 0.625rem;
     display: flex;
     flex-direction: column;
@@ -393,7 +390,7 @@ header nav ul li a i{
     margin-bottom: 1.25rem;
     font-size: 1.6em;
     font-weight: 700;
-    color: var(--b8);
+    color: var(--b6);
     text-shadow: 1px 1px 0px black;
 }
 .descricao-projetos a:hover{
@@ -410,7 +407,8 @@ header nav ul li a i{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 311px;
+    /* width: 311px; */
+    width: 300px;
     height: 627px;
     display: flex;
     flex-direction: row;
@@ -421,6 +419,7 @@ header nav ul li a i{
 }
 iframe{
     border: 2px solid black;
+    /* width: 270px; */
     width: 270px;
     height: 475px; 
 }
@@ -439,31 +438,25 @@ iframe{
 }
 .bg-contato h2{
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     color: var(--b01);
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 2px 2px 0px black;
 }
 .section-contato{
-    height: 100vh;
     width: 100%;
     padding: 2.5rem 0.3125rem;
     background-color: var(--b08);
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
 }
 .section-contato form{
     background-color: var(--b09);
     width: 31.25rem;
-    padding: 2.5rem;
+    padding: 2.5rem 0.625rem;
     margin: 0 auto;
     border: 1px solid var(--b01);
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; */
 }
 .section-contato form h2{
     text-align: center;
@@ -472,12 +465,8 @@ iframe{
     text-shadow: 1px 1px 0px black;
     margin-bottom: 2.5rem;
 }
-/* .section-contato form input{
-    margin-bottom: 0.625rem;
-} */
 .div-campo{
     width: 100%;
-    /* border: 1px solid var(--b8); */
     margin-bottom: 2rem;
     padding: 0.1rem 0.3125rem;
 
@@ -513,13 +502,10 @@ iframe{
 }
 .div-textarea{
     width: 100%;
-    /* border: 1px solid var(--b8); */
     margin-bottom: 2rem;
     padding: 0.3rem 0.3125rem;
 
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 .div-textarea textarea{
     color: var(--b09);
@@ -550,7 +536,6 @@ iframe{
 }
 .div-btn-form{
     width: 100%;
-    /* border: 1px solid var(--b01); */
     display: flex;
     justify-content: center;
     align-items: center;
