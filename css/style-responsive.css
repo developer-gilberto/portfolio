@@ -67,6 +67,8 @@
     }
     .home-img{
         max-width: 70%;
+        justify-content: center;
+        margin: 0 auto;
     }
     .home-img img{
         width: 95%;
