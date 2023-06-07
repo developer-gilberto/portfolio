@@ -57,7 +57,7 @@ header{
     z-index: 1;
     position: fixed;
     width: 100%;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
 }
 header a{
     color: transparent;
@@ -658,4 +658,16 @@ footer{
     text-align: center;
     color: var(--b8);
     padding: 0.625rem;   
+}
+footer a .bx{
+    color: var(--b01);
+    font-size: 2rem;
+    border-radius: 50%;
+}
+footer a .bx:hover{
+    box-shadow: 0px 0px 5px var(--b01);
+}
+footer a .bx:active{
+    color: var(--b09);
+    background-color: var(--b01);
 }

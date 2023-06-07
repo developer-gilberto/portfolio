@@ -145,12 +145,14 @@
 @media screen and (max-width: 520px) {
     header{
         padding: 0.625rem 0rem;
+        z-index: 0;
+        position: static;
     }
     header nav ul{
         flex-direction: column;
     }
     main{
-        padding-top: 16rem;
+        padding-top: 1.25rem;
     }
 }
 
