@@ -42,10 +42,13 @@ html, body{
     background-color: var(--b01);
     border-radius: 0.625rem;
 }
+
+/* HEADER */
+
 header{
     width: 100%;
     background-color: var(--b09);
-    border-bottom: 1px solid var(--b8);
+    border-bottom: 1px solid var(--b01);
     padding: 0.625rem 1.25rem;
 
     display: flex;
@@ -57,8 +60,30 @@ header{
     z-index: 1;
     position: fixed;
     width: 100%;
-    /* margin-bottom: 0px; */
 }
+
+/* ANIMAÇÃO BORDER-BOTTOM DO HEADER */
+
+/* .span-animado-header{
+    position: absolute;
+    background: linear-gradient(to right, transparent, var(--b01));
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    animation: animaheader 2s linear infinite;
+}
+@keyframes animaheader{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+} */
+
+/* LOGOMARCA */
+
 header a{
     color: transparent;
 }
@@ -87,7 +112,6 @@ header a{
 }
 .maior-menor{
     -webkit-text-stroke: 1px var(--b01);
-    /* color: transparent; */
     font-size: 2em;
     font-weight: bold;
 }
@@ -97,6 +121,9 @@ header a{
 .registrada{
     color: var(--b01);
 }
+
+/* MENU DO HEADER */
+
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -106,8 +133,6 @@ header nav ul{
 }
 header nav ul li{
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap;*/ 
     justify-content: center;
     align-items: center;
     margin: 0.3125rem 0.625rem;
@@ -118,8 +143,6 @@ header nav ul li a{
     font-size: 1.25rem;
     font-weight: bold;
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
 }
@@ -131,21 +154,21 @@ header nav ul li a .bx{
     color: var(--b01);
     margin: 0.3125rem;
     font-size: 1.5625rem;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; */
     justify-content: center;
     align-items: center;
 }
+
+/* MAIN */
+
 main{
     background-color: var(--b08);
     width: 100%;
-    /* margin-top: 96px; */
     padding-top: 9rem;
-    /* padding: 3.125rem; */
 }
+
+/* SEÇÃO HOME */
+
  #home{
-    /* height: 100vh; */
     width: 100%;
     padding-bottom: 3.125rem;
     display: flex;
@@ -204,6 +227,9 @@ main{
     border-radius: 50%;
     background-image: linear-gradient(to top, black, var(--b09), var(--b07));
 }
+
+/* PARALLAX MY SKILLS */
+
 .bg-skills{
     height: 400px;
     width: 100%;
@@ -224,21 +250,24 @@ main{
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 2px 2px 0px black;
 }
+
+/* SEÇÃO SKILLS */
+
 .section-skills{
     background-color: var(--b09);
     padding: 1.875rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 .div-skills{
-    max-width: 56.25rem;
-
-    box-shadow: 0px 0px 5px black;
+    max-width: 25rem;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.77);
     background-image: linear-gradient(to bottom, var(--b07), var(--b09));
     border: 1px solid var(--b01);
+    border-radius: 20px;
     padding: 1.875rem;
     margin: 1.25rem;
     display: flex;
@@ -254,9 +283,8 @@ main{
     text-shadow: 1px 1px 0px black;
 }
 .div-skills img{
-
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.626);
     max-width: 9.375rem;
-
     border: 1px solid var(--b01);
     border-radius: 50%;
     padding: 0.625rem;
@@ -264,6 +292,8 @@ main{
     margin-bottom: 1.875rem;
 }
 .skill-html{
+    position: relative;
+    overflow: hidden;
     min-width: 100%;
     padding: 0.3125rem;
     margin-bottom: 1.25rem;
@@ -273,7 +303,6 @@ main{
     align-items: center;
 }
 .skill-html p{
-
     background-color: var(--b01);
     width: 70%;
     color: var(--b09);
@@ -284,6 +313,8 @@ main{
     color: var(--b01);
 }
 .skill-css{
+    position: relative;
+    overflow: hidden;
     min-width: 100%;
     padding: 0.3125rem;
     margin-bottom: 1.25rem;
@@ -303,6 +334,8 @@ main{
     color: var(--b01);
 }
 .skill-js{
+    position: relative;
+    overflow: hidden;
     min-width: 100%;
     padding: 0.3125rem;
     margin-bottom: 1.25rem;
@@ -321,6 +354,27 @@ main{
 .skill-js span{
     color: var(--b01);
 }
+
+/* ANIMAÇÃO BARRAS DE SKILLS */
+
+.span-animado-skills{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(0, 213, 255, 0.542));
+    animation: animar-span-skills 2s linear infinite;
+}
+@keyframes animar-span-skills{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+/* PARALLAX PROJETOS */
+
 .bg-projetos{
     height: 400px;
     width: 100%;
@@ -341,6 +395,9 @@ main{
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 2px 2px 0px black;
 }
+
+/* SEÇÃO DE EXPLICAÇÃO DOS PROJETOS */
+
 .explicacao-projetos{
     margin: 0 auto;
     padding:  3.125rem 1.25rem;
@@ -355,6 +412,9 @@ main{
     color: var(--b6);
     text-shadow: 1px 1px 0px black;
 }
+
+/* SEÇÃO PROJETOS */
+
 .projetos{
     margin: 0 auto;
     max-width: 62.5rem;
@@ -367,7 +427,6 @@ main{
 }
 .div-projetos{
     max-width: 100%;
-
     box-shadow: 0px 0px 5px black;
     background-image: linear-gradient(to bottom, var(--b07), var(--b09));
     border: 1px solid var(--b01);
@@ -425,6 +484,9 @@ iframe{
     width: 270px;
     height: 475px; 
 }
+
+/* PARALLAX CONTATO */
+
 .bg-contato{
     height: 400px;
     width: 100%;
@@ -445,6 +507,9 @@ iframe{
     -webkit-text-stroke: 1px var(--b09);
     text-shadow: 2px 2px 0px black;
 }
+
+/* SEÇÃO CONTATO */
+
 .section-contato{
     width: 100%;
     padding: 2.5rem 0.3125rem;
@@ -456,13 +521,109 @@ iframe{
 .section-contato form{
     position: relative;
     overflow: hidden;
-
+    box-shadow: 7px 5px 15px rgba(0, 0, 0, 0.626);
     background-color: var(--b09);
     width: 31.25rem;
     padding: 2.5rem 0.625rem;
     margin: 0 auto;
-    /* border: 1px solid var(--b01); */
+    border: 1px solid var(--b07);
 }
+.section-contato form h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--b6);
+    text-shadow: 1px 1px 0px black;
+    margin-bottom: 2.5rem;
+}
+.div-campo{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.1rem 0.3125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-campo input{
+    color: var(--b09);
+    font-weight: 700;
+    background-color: var(--b6);
+    border: 1px solid var(--b01);
+    width: 100%;
+    outline: none;
+    padding: 0.3125rem;
+}
+.div-campo input:focus{
+    border: 2px solid var(--b01);
+    border-radius: 1.25rem;
+    background-color: var(--b06);
+    color: var(--b01);
+    font-weight: 500;
+    text-shadow: 1px 1px 0px black;
+}
+.div-campo .bx{
+    color: var(--b01);
+    padding: 0.3125rem;
+    padding-right: 0.625rem;
+    font-size: 1.25rem;
+}
+.div-campo .bx:hover{
+    cursor: pointer;
+}
+.div-textarea{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0.3rem 0.3125rem;
+    display: flex;
+}
+.div-textarea textarea{
+    color: var(--b09);
+    font-weight: 700;
+    background-color: var(--b6);
+    border: 1px solid var(--b01);
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 0.3125rem;
+}
+.div-textarea textarea:focus{
+    border: 2px solid var(--b01);
+    border-radius: 0.625rem;
+    background-color: var(--b06);
+    color: var(--b01);
+    font-weight: 500;
+    text-shadow: 1px 1px 0px black;
+}
+.div-textarea .bx{
+    color: var(--b01);
+    padding: 0.3125rem;
+    padding-right: 0.625rem;
+    font-size: 1.25rem;
+}
+.div-textarea .bx:hover{
+    cursor: pointer;
+}
+.div-btn-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-form{
+    background-color: var(--b08);
+    padding: 0.3125rem 1.25rem;
+    margin-left: 1.25rem;
+    color: var(--b01);
+    font-weight: bold;
+    border: 1px solid var(--b01);
+    border-radius: 0.3125rem;
+}
+.btn-form:hover{
+    background-color: var(--b01);
+    color: var(--b09);
+}
+
+/* ANIMAÇÃO FORMULÁRIO */
+
 .section-contato form span:nth-child(1){
     position: absolute;
     height: 1px;
@@ -533,101 +694,19 @@ iframe{
         transform: translateY(-100%);
     }
 }
-.section-contato form h2{
+
+/* FOOTER */
+
+footer{
+    border-top: 1px solid var(--b01);
+    background-color: var(--b09);
     text-align: center;
-    font-size: 1.5em;
-    color: var(--b6);
-    text-shadow: 1px 1px 0px black;
-    margin-bottom: 2.5rem;
+    color: var(--b8);
+    padding: 0.625rem;   
 }
-.div-campo{
-    width: 100%;
-    margin-bottom: 2rem;
-    padding: 0.1rem 0.3125rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.div-campo input{
-    color: var(--b09);
-    font-weight: 700;
-    background-color: var(--b6);
-    border: 1px solid var(--b01);
-    width: 100%;
-    outline: none;
-    padding: 0.3125rem;
-}
-.div-campo input:focus{
-    border: 2px solid var(--b01);
-    border-radius: 1.25rem;
-    background-color: var(--b06);
-    color: var(--b01);
-    font-weight: 500;
-    text-shadow: 1px 1px 0px black;
-}
-.div-campo .bx{
-    color: var(--b01);
-    padding: 0.3125rem;
-    padding-right: 0.625rem;
-    font-size: 1.25rem;
-}
-.div-campo .bx:hover{
-    cursor: pointer;
-}
-.div-textarea{
-    width: 100%;
-    margin-bottom: 2rem;
-    padding: 0.3rem 0.3125rem;
+/* LOGOMARCA FOOTER SEM ANIMAÇÃO */
 
-    display: flex;
-}
-.div-textarea textarea{
-    color: var(--b09);
-    font-weight: 700;
-    background-color: var(--b6);
-    border: 1px solid var(--b01);
-    width: 100%;
-    resize: none;
-    outline: none;
-    padding: 0.3125rem;
-}
-.div-textarea textarea:focus{
-    border: 2px solid var(--b01);
-    border-radius: 0.625rem;
-    background-color: var(--b06);
-    color: var(--b01);
-    font-weight: 500;
-    text-shadow: 1px 1px 0px black;
-}
-.div-textarea .bx{
-    color: var(--b01);
-    padding: 0.3125rem;
-    padding-right: 0.625rem;
-    font-size: 1.25rem;
-}
-.div-textarea .bx:hover{
-    cursor: pointer;
-}
-.div-btn-form{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn-form{
-    background-color: var(--b08);
-    padding: 0.3125rem 1.25rem;
-    margin-left: 1.25rem;
-    color: var(--b01);
-    font-weight: bold;
-    border: 1px solid var(--b01);
-    border-radius: 0.3125rem;
-}
-.btn-form:hover{
-    background-color: var(--b01);
-    color: var(--b09);
-}
 #logo-footer{
     font-size: 1.2em;
     display: flex;
@@ -652,13 +731,9 @@ iframe{
     font-size: 1.6em;
     font-weight: bold;
 }
-footer{
-    border-top: 1px solid var(--b8);
-    background-color: var(--b09);
-    text-align: center;
-    color: var(--b8);
-    padding: 0.625rem;   
-}
+
+/* BOTÃO VOLTAR AO TOPO */
+
 footer a .bx{
     color: var(--b01);
     font-size: 2rem;

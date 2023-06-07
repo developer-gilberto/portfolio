@@ -28,7 +28,11 @@
     --b09: #04133B;
     --b10: #091B2A;
 }
+
+/* 980px */
+
 @media screen and (max-width: 980px) {
+    
     header{
         flex-direction: column;
         justify-content: center;
@@ -111,7 +115,6 @@
     .bg-projetos h2{
         font-size: 2em;
     }
-    
     .div-projetos{
         padding: 1.875rem 0;
         margin: 1.25rem auto;
@@ -139,10 +142,12 @@
     .section-contato form{
         padding: 2.5rem 0.3125rem;
     }
-
 }
 
+/* 520px */
+
 @media screen and (max-width: 520px) {
+    
     header{
         padding: 0.625rem 0rem;
         z-index: 0;
@@ -154,12 +159,16 @@
     main{
         padding-top: 1.25rem;
     }
+    .div-skills p{
+        text-align: center;
+    }
 }
+
+/* 350px */
 
 @media screen and (max-width: 350px) {
     iframe{
          /* width: 87%; */
          height: 67%;
      }
-
 }
