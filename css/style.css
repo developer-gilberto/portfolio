@@ -50,7 +50,7 @@ header{
 
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
@@ -107,7 +107,7 @@ header nav ul{
 header nav ul li{
     display: flex;
     /* flex-direction: row;
-    flex-wrap: nowrap; */
+    flex-wrap: nowrap;*/ 
     justify-content: center;
     align-items: center;
     margin: 0.3125rem 0.625rem;
