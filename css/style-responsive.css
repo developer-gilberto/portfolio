@@ -32,7 +32,7 @@
 /* 980px */
 
 @media screen and (max-width: 980px) {
-    
+
     header{
         flex-direction: column;
         justify-content: center;
@@ -115,24 +115,6 @@
     .bg-projetos h2{
         font-size: 2em;
     }
-    .div-projetos{
-        padding: 1.875rem 0;
-        margin: 1.25rem auto;
-    }
-    .descricao-projetos{
-        width: 100%;
-        padding: 1.25rem;
-    }
-    .descricao-projetos a{
-        font-size: 1.3em;
-    }
-    .div-iphone{
-        background-size: contain;
-    }
-    iframe{
-        width: 87%;
-        height: 73%;
-    }
     .bg-contato h2{
         font-size: 2em;
     }
@@ -168,7 +150,23 @@
 
 @media screen and (max-width: 350px) {
     iframe{
-         /* width: 87%; */
-         height: 67%;
+          width: 100%;
      }
+     .projetos{
+        padding: 1.875rem 0.625rem;
+    }
+     .card-projetos{
+        min-width: 100%;
+        padding: 2rem 0.625rem;
+    }
+}
+
+/* HORIZONTAL (PAISAGEM) */
+
+@media screen and (orientation: landscape) and (max-width: 920px){
+    header{
+        padding: 0.625rem 0rem;
+        z-index: 0;
+        position: static;
+    }
 }

@@ -47,16 +47,11 @@ header{
     background-color: var(--b09);
     border-bottom: 1px solid var(--b8);
     padding: 0.625rem 1.25rem;
-
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
-    /* position: fixed;
-    width: 100%;
-    margin-bottom: 0px; */
 }
 header a{
     color: transparent;
@@ -86,7 +81,6 @@ header a{
 }
 .maior-menor{
     -webkit-text-stroke: 1px var(--b01);
-    /* color: transparent; */
     font-size: 2em;
     font-weight: bold;
 }
@@ -96,7 +90,6 @@ header a{
 .registrada{
     color: var(--b01);
 }
-
 main{
     height: 100%;
     background-color: var(--b08);
@@ -129,7 +122,6 @@ main .bx{
     text-shadow: 1px 1px 0px black;
     margin-bottom: 3.125rem;
 }
-
 #logo-footer{
     font-size: 1.2em;
     display: flex;
@@ -154,7 +146,6 @@ main .bx{
     font-size: 1.6em;
     font-weight: bold;
 }
-
 footer{
     border-top: 1px solid var(--b8);
     background-color: var(--b09);

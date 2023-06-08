@@ -416,73 +416,92 @@ main{
 /* SEÇÃO PROJETOS */
 
 .projetos{
-    margin: 0 auto;
-    max-width: 62.5rem;
-    padding:  0rem 1.25rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.div-projetos{
-    max-width: 100%;
-    box-shadow: 0px 0px 5px black;
-    background-image: linear-gradient(to bottom, var(--b07), var(--b09));
-    border: 1px solid var(--b01);
-    padding: 1.875rem;
-    margin: 1.25rem;
+    background-color: var(--b09);
+    padding: 1.875rem 0.3125rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
-.descricao-projetos{
-    width: 50%;
-    padding: 0.625rem;
+.card-projetos{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.77);
+    background-image: linear-gradient(to bottom, var(--b07), var(--b09));
+    max-width: 25rem;
+    border: 1px solid var(--b01);
+    border-radius: 20px;
+    padding: 2rem 1.25rem;
+    margin: 1.25rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
 }
-.descricao-projetos a{
-    margin-bottom: 1.25rem;
-    font-size: 1.6em;
-    font-weight: 700;
+.card-projetos h3{
+    text-align: center;
+    font-size: 1.5em;
     color: var(--b6);
     text-shadow: 1px 1px 0px black;
+    margin-bottom: 20px;
 }
-.descricao-projetos a:hover{
-    color: var(--b01);
-}
-.descricao-projetos p{
+.card-projetos p{
     text-align: justify;
     font-size: 1em;
     color: var(--b6);
     text-shadow: 1px 1px 0px black;
+    margin-bottom: 20px;
+    padding: 0 1.25rem;
 }
-.div-iphone{
-    background-image: url(../img/frame-iphone.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    /* width: 311px; */
-    width: 300px;
-    height: 627px;
+.card-projetos .div-icon{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+}
+.card-projetos .div-icon .orange5{
+    color: rgba(255, 55, 0, 0.911);
+    text-shadow: 1px 1px 0px black;
+    font-size: 3em;
+    margin: 1.25rem;
+}
+.card-projetos .div-icon .blue3{
+    color: rgb(18, 18, 255);
+    text-shadow: 1px 1px 0px black;
+    font-size: 3em;
+    margin: 1.25rem;
 }
 iframe{
-    border: 2px solid black;
-    /* width: 270px; */
-    width: 270px;
-    height: 475px; 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.card-projetos a{
+    background-color: var(--b07);
+    border: 1px solid var(--b01);
+    border-radius: 20px;
+    color: var(--b01);
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 1px 1px 0px black;
+    margin: 10px 50px;
+    display: block;
+}
+.card-projetos a:hover{
+    margin: 10px 45px;
+    background-color: var(--b01);
+    border: 1px solid var(--b01);
+    color: var(--b09);
+    font-weight: bold;
+    text-shadow: none;
+    transition: 0.3s ease;
 }
 
 /* PARALLAX CONTATO */
