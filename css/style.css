@@ -198,10 +198,6 @@ main{
     font-size: 2rem;
     font-weight: bold;
 }
-#res-nome{
-    text-shadow: 1px 1px 0px black;
-    color: var(--b6);
-}
 .sobre-mim p{
     color: white;
     text-shadow: 1px 1px 0px black;
